@@ -1,6 +1,6 @@
 {% set name = "pyRestTable" %}
-{% set version = "2020.0.5" %}
-{% set sha256 = "169ca2ea5347493635a52fcb02ba6aa179dbc98d816ca07fa5508ea87f314f8f" %}
+{% set version = "2020.0.6rc2" %}
+{% set sha256 = "fd315d63108b89e88a40a0b96bb75db52edbe88084e74c74f35975fd7414c4db" %}
 
 package:
   name: {{ name|lower }}
@@ -19,11 +19,9 @@ requirements:
   host:
     - pip
     - python >=3.6
-    - setuptools-scm
   run:
     - python >=3.6
     - lxml
-    - setuptools-scm
 
 test:
   imports:
