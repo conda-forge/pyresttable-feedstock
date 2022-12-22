@@ -1,6 +1,5 @@
 {% set name = "pyRestTable" %}
-{% set version = "2020.0.6" %}
-{% set sha256 = "84308220db16e7794ce84c5966e43a22fc5873a247189ca7393e46b82f226b78" %}
+{% set version = "2020.0.7" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: b6fd6ead9f1a9601eb152156e615827cff3340f46830ef07ef2d8781147b5b78
 
 build:
   number: 0
