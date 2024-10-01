@@ -1,13 +1,14 @@
 {% set name = "pyRestTable" %}
-{% set version = "2020.0.8" %}
+{% set version = "2020.0.10" %}
+{% set sha256 = "9b23db835e46b389c61a850e61aea1a7a5600b39c4707714e4fb655c1fbe7747" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c262e7f31fd0f50f58ceaacefe380d423b2c0b62e5e3268186c393ac44ff6d41
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name|lower }}-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
 
 build:
   number: 0
@@ -17,10 +18,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.9
     - setuptools-scm
   run:
-    - python >=3.7
+    - python >=3.9
     - lxml
 
 test:
@@ -35,6 +36,6 @@ about:
 
 extra:
   recipe-maintainers:
-    - mrakitin
     - prjemian
+    - mrakitin
     - kbeeperez
